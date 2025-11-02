@@ -1,0 +1,219 @@
+.hero {
+    position: relative;
+    height: 109vh;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('https://t4.ftcdn.net/jpg/05/37/87/53/360_F_537875358_8zdTYNIYtoLWSsxRzTbFzVDY4MsAJDy0.jpg') center/cover no-repeat;
+    transition: background-position 0.1s ease;
+    overflow: hidden;
+    margin-top: 70px;
+}
+.hero-bg {
+  background: url('topo-pattern.svg') center/cover;
+  transform: translateZ(0); /* لتحسين الأداء */
+  transition: transform 0.6s ease-out;
+}
+
+.grain {
+  position: absolute;
+  inset: 0;
+  background: url('grain.png') repeat;
+  opacity: 0.15;
+  animation: grain 8s steps(10) infinite;
+  pointer-events: none;
+}
+
+@keyframes grain {
+  0%, 100% { transform: translate(0, 0); }
+  10% { transform: translate(-1%, -1%); }
+  /* ... */
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('https://img.freepik.com/premium-vector/abstract-topographic-contour-line-pattern-solid-background-vector-map_730604-207.jpg') center center/cover no-repeat;
+    opacity: 0.2;
+    z-index: 1;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    background: url ('https://www.transparenttextures.com/patterns/diagmonds-light.png') repeat;
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+    opacity: 0.5;
+    z-index: 1;
+}
+@keyframes gradientBG {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: var(--bg-white);
+    padding: 2rem;
+    animation: fadeInUp 1.2s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.hero-title {
+    font-family: var(--font-heading);
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    transition: text-shadow 0.3s ease, color 0.3s ease;
+    animation: glow 3s ease-in-out infinite alternate;
+
+    @keyframes glow {
+        from {
+            text-shadow: 0 0 5px #E67600, 0 0 10px #E67600, 0 0 15px #E67600;
+        }
+        to {
+            text-shadow: 0 0 20px #ffffff, 0 0 30px #E67600, 0 0 40px #E67600;
+        }
+    }
+}
+.hero-title:hover {
+    text-shadow: 0 0 10px #E67600, 0 0 20px #ffffff, 0 0 30px #E67600;
+    color: #ffffff;
+}
+.hero-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    font-weight: 300;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 0.875rem 2rem;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: var(--transition);
+    display: inline-block;
+    border: 2px solid transparent;
+}
+
+.btn-primary {
+    background: var(--bg-white);
+    color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-lg);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: var(--bg-white);
+    border: 2px solid var(--bg-white);
+}
+
+.btn-secondary:hover {
+    background: var(--bg-white);
+    color: var(--primary-color);
+}
+
+.btn-large {
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+}
+
+.btn-outline {
+    background: transparent;
+    color: var(--bg-white);
+    border: 2px solid var(--bg-white);
+    padding: 0.6rem 1.5rem;
+}
+
+.scroll-indicator {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+    color: var(--bg-white);
+    font-size: 1.5rem;
+    animation: bounce 2s infinite;
+}
+@keyframes bounce {
+    0%, 100% {
+        transform: translateX(-50%) translateY(0);
+    }
+    50% {
+        transform: translateX(-50%) translateY(-15px);
+    }
+}
+.payment-section {
+  max-width: 400px;
+  max-height: 200px;
+  margin: 1px auto;
+  text-align: center;
+  color: #222;
+}
+
+.payment-options {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 0.1rem;
+}
+
+.payment-card {
+  border: 2px solid #ddd;
+  border-radius: 74px;
+  padding: 2rem;
+  width: 200px;
+  height: 170px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.payment-card:hover {
+  border-color: #e50914;
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(229,9,20,0.3);
+}
+
+.payment-card img {
+  width: 100px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.payment-form {
+  margin-top: 2rem;
+  display: none;
+}

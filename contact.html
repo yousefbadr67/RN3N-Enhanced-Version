@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Us - Resalet Nour Ala Nour. Get in touch with us for volunteering, partnerships, or inquiries.">
+    <title>Contact Us - Resalet Nour Ala Nour</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .contact-page {
+            padding: 8rem 0 5rem;
+        }
+        .contact-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            margin-top: 3rem;
+        }
+        .contact-info-card {
+            background: var(--bg-light);
+            padding: 2.5rem;
+            border-radius: 15px;
+            height: fit-content;
+        }
+        .contact-form-wrapper {
+            background: var(--bg-white);
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: var(--shadow-md);
+        }
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--primary-color);
+            color: var(--bg-white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+        .contact-details h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-dark);
+        }
+        .contact-details p {
+            color: var(--text-light);
+            line-height: 1.8;
+        }
+        .form-group-contact {
+            margin-bottom: 1.5rem;
+        }
+        .form-group-contact label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: var(--text-dark);
+        }
+        .form-group-contact input,
+        .form-group-contact textarea,
+        .form-group-contact select {
+            width: 100%;
+            padding: 0.875rem 1rem;
+            border: 2px solid var(--border-color);
+            border-radius: 8px;
+            font-family: inherit;
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+        .form-group-contact input:focus,
+        .form-group-contact textarea:focus,
+        .form-group-contact select:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+        .form-group-contact textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+        @media (max-width: 968px) {
+            .contact-wrapper {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+      <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <img src="https://cdn.brandfetch.io/idrVnzLnRJ/w/1071/h/1071/theme/dark/icon.png?c=1bxid64Mup7aczewSAYMX&t=1756104477332" alt="Resalet Nour Ala Nour Logo" onerror="this.style.display='none'">
+                </a>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#projects">Projects</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="projects.html">All Products</a></li>
+                    <li><a href="team.html">Our Team</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="index.html#get-involved" class="btn-get-involved">Get Involved</a></li>
+                    <li><a href="Donation.html" class="btn-donate">Donate Now</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Contact Us</h1>
+            <p class="page-subtitle">Get in touch with us - we'd love to hear from you</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-page">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info-card">
+                    <h2 class="section-title" style="margin-bottom: 2rem;">Get in Touch</h2>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Address</h3>
+                            <p>Giza, Egypt</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>info@rn3n.org</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <p>+20 122 860 2602</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Follow Us</h3>
+                            <p>
+                                <a href="https://www.instagram.com/r.nouralanour/" target="_blank" rel="noopener noreferrer" style="color: var(--primary-color);">@r.nouralanour</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 2rem;">
+                        <h3 style="margin-bottom: 1rem;">Office Hours</h3>
+                        <p style="color: var(--text-light); line-height: 1.8;">
+                            Sunday - Thursday: 9:00 AM - 5:00 PM<br>
+                            Friday - Saturday: Closed
+                        </p>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <h2 class="section-title" style="margin-bottom: 2rem;">Send us a Message</h2>
+                    
+                    <form id="contactForm">
+                        <div class="form-group-contact">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group-contact">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group-contact">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+
+                        <div class="form-group-contact">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="volunteer" id="volunteer">Volunteer Inquiry</option>
+                                <option value="partnership" id="partnership">Partnership Opportunity</option>
+                                <option value="donation">Donation Inquiry</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="media">Media & Press</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group-contact">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-large" style="width: 100%;">Send Message</button>
+                        
+                        <div class="form-message" id="contactMessage" style="margin-top: 1rem;"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">Who We Are</h3>
+                    <ul class="footer-links">
+                        <li><a href="team.html">Our Team</a></li>
+                        <li><a href="#about">In the Press</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">What We Do</h3>
+                    <ul class="footer-links">
+                        <li><a href="#projects">Scope of Work</a></li>
+                        <li><a href="#donate">Make a Donation</a></li>
+                        <li><a href="#get-involved">Get Involved</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/r.nouralanour/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/rnanngo/?locale=ar_ARbook" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/company/resala-nour-ala-nour/?originalSubdomain=eg" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <div class="footer-newsletter">
+                        <p>Stay updated with our newsletter</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Contact Info</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> info@rn3n.org</p>
+                        <p><i class="fas fa-phone"></i> +20 122 860 2602</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Shabramant, Giza, Egypt</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Resalet Nour Ala Nour. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Contact Form Handler
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const messageDiv = document.getElementById('contactMessage');
+            messageDiv.className = 'form-message';
+            messageDiv.style.display = 'none';
+            
+            // Simulate form submission
+            setTimeout(() => {
+                messageDiv.className = 'form-message success';
+                messageDiv.textContent = 'Thank you for your message! We will get back to you soon.';
+                messageDiv.style.display = 'block';
+                this.reset();
+                
+                setTimeout(() => {
+                    messageDiv.style.display = 'none';
+                }, 5000);
+            }, 500);
+        });
+
+        // Handle anchor links in subject dropdown
+        const urlParams = new URLSearchParams(window.location.search);
+        const anchor = urlParams.get('anchor') || window.location.hash.substring(1);
+        if (anchor) {
+            const subjectSelect = document.getElementById('subject');
+            if (subjectSelect) {
+                const option = document.getElementById(anchor);
+                if (option) {
+                    subjectSelect.value = option.value;
+                }
+            }
+        }
+    </script>
+</body>
+</html>
+
